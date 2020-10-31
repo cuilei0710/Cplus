@@ -2,7 +2,8 @@
 
 using namespace std;
 
-int main(){
+int main()
+{
     cout << "Enter the starting countdown value: ";
     int limit;
     cin >> limit;
