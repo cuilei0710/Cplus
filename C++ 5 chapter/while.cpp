@@ -8,7 +8,7 @@ int main()
     char name[ArSize];
     cout << "Your first name, please: ";
     cin >> name;
-    cout << "Here is your name, verticalized and ASCIIized:\n";
+    cout << "Here is your name, verticalities and ASCII:\n";
     int i = 0;              // start at beginning of string
     while (name[i] != '\0') // process to end of string
     {
