@@ -33,7 +33,7 @@ int main()
     }
     else
     {
-        cout << "Enter your NA_AQ";
+        cout << "Enter your NA_AQ: ";
         float you;
         cin >> you;
         int count = 0;
