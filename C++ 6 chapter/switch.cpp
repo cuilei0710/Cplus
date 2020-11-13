@@ -29,7 +29,8 @@ int main()
         case 3:
             cout << "The boss was in all day.\n";
             break;
-        case 4 comfort();
+        case 4:
+            comfort();
             break;
             default:
             cout << "That's not a choice.\n";
