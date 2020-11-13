@@ -32,7 +32,7 @@ int main()
         case 4:
             comfort();
             break;
-            default:
+        default:
             cout << "That's not a choice.\n";
         }
         showmenu();
