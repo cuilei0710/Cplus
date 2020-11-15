@@ -10,7 +10,7 @@ int main()
     {
         f[i] = f[i - 2] + f[i - 1];
     }
-    cout.setf(ios::left);
+    cout.setf(ios::right);
     for (int i = 0; i < 20; i++)
     {
         if (i % 5 == 0)
