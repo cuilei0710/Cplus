@@ -9,7 +9,7 @@
 using namespace std;
 
 const int ArSize = 8;
-int sum_arr(int arr[], int n); //prototype
+int sum_arr(int arr[], int n); //prototype 可以用int * arr替换int arr[]
 
     int main()
 {
