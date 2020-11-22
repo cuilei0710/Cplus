@@ -2,7 +2,7 @@
  * @Author: 崔小葵
  * @Date: 2020-11-14 19:28:22
  * @Last Modified by: 崔小葵
- * @Last Modified time: 2020-11-15 23:53:43
+ * @Last Modified time: 2020-11-22 22:02:42
  */
 #include <iostream>
 #include <iomanip>
@@ -65,6 +65,8 @@ int main()
         case 'a':
             display(boparray, 0, n);
             break;
+            // Why I didn’t use the address of the array here?
+            // It’s because I just output the array instead of changing the value of the original array.
         case 'b':
             display(boparray, 1, n);
             break;
