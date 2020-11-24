@@ -61,7 +61,7 @@ void Show_array(double cl_array[], unsigned int Array_Len)
 
 void Reverse_array(double cl_array[], unsigned int Array_Len)
 {
-    cout << "Revert the array" << endl;
+    cout << "Revert the array: " << endl;
     for (size_t i = 0; i < Array_Len / 2; i++)
     {
         double tmp = cl_array[i];

@@ -10,12 +10,14 @@ using namespace std;
 
 int Fill_array(double *begin, double *end);
 void Show_array(const double *begin, const double *end);
+void Reverse_array(const double *begin, const double *end);
 
 int main()
 {
     double cl_Array[10];
     int size = Fill_array(cl_Array, cl_Array + 10);
     Show_array(cl_Array, cl_Array + size);
+    Reverse_array(cl_Array, cl_Array + size);
     system("pause");
     return 0;
 }
@@ -62,3 +64,30 @@ void Show_array(const double *begin, const double *end)
         cout << endl;
     }
 }
+
+void Reverse_array(const double *begin, const double *end)
+{
+    const double *pt = nullptr;
+    int Array_Len = 0;
+    for (pt = begin; pt != end; pt++)
+    {
+        Array_Len++;
+    }
+    cout << "Revert the array: " << endl;
+    int i = 0;
+    for (pt = end - 1; pt != begin - 1; pt--, i++)
+    {
+        cout << (*pt) << " ";
+        if ((i + 1) % 5 == 0)
+        {
+            cout << endl;
+        }
+    }
+    if (Array_Len % 5 != 0)
+    {
+        cout << endl;
+    }
+}
+
+// Why do I use end-1 instead of end later,
+// here we should pay attention to the difference of 1 between the actual parameters involved in the form
