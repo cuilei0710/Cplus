@@ -12,5 +12,4 @@ char * left(const char * str, int n = 1);
 int main(){
     using namespace std;
     char * trip = "Hawaii!!"; // test value
-
 }
