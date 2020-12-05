@@ -83,7 +83,7 @@
     "files.autoGuessEncoding": true,
     "files.trimTrailingWhitespace": true,
     "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Noctis Lux",
+    "workbench.colorTheme": "Luke Dark",
     "workbench.sideBar.location": "right",
     "window.zoomLevel": 1,
 }
