@@ -2,7 +2,7 @@
  * @Author: 崔小葵
  * @Date: 2020-12-07 12:23:11
  * @Last Modified by: 崔小葵
- * @Last Modified time: 2020-12-07 13:31:51
+ * @Last Modified time: 2020-12-07 15:46:18
  */
 #include <iostream>
 
@@ -11,7 +11,7 @@ using namespace std;
 const int ArSize = 50;
 
 template <typename T>
-T SumArray(T *, int);
+T SumArray(T *arr[], int);
 template <typename T>
 T SumArray(T[], int);
 
@@ -36,7 +36,7 @@ int main()
         pi[i] = &Debt_Arr[i].amount;
     }
     sum_int = SumArray<int>(thing, 6);
-    sum_double = SumArray(pi, 3);
+    sum_double = SumArray<double>(pi, 3);
     cout << "Sum_int = " << sum_int << "\n"
          << "Sum_double = " << sum_double << endl;
     system("pause");
@@ -49,8 +49,7 @@ T SumArray(T *arr[], int n)
     T sum = 0.0;
     for (size_t i = 0; i < n; i++)
     {
-        sum += *arr;
-        arr++;
+        sum += *arr[i];
     }
     return sum;
 }
