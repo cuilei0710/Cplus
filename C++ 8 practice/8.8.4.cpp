@@ -14,7 +14,7 @@ struct stringy
     int ct;    // length of string (not counting '\0')
 };
 
-void set(struct stringy &in_stringy, char *in_string)
+void set(stringy &in_stringy, char *in_string)
 {
     in_stringy.ct = strlen(in_string);
     in_stringy.str = new char[(in_stringy.ct) + 1];
@@ -27,6 +27,8 @@ void show(const struct stringy &in_stringy, int print_times = 1)
     {
         cout << "Member string of struct stringy: " << in_stringy.str << endl;
     }
+    cout << "ct = " << in_stringy.ct << endl;
+    cout << endl;
 }
 
 void show(const char *str, int print_times = 1)
@@ -35,12 +37,13 @@ void show(const char *str, int print_times = 1)
     {
         cout << "Print char string: " << str << endl;
     }
+    cout << endl;
 }
 
 // prototypes for set(), show(), and show() go here
 int main()
 {
-    string bea_ny;
+    stringy bea_ny;
     char testing[] = "Reality isn't what is used to be.";
 
     set(bea_ny, testing);
