@@ -18,7 +18,7 @@ int main()
     Time t1, t2;
     set_time(t1, 12, 23, 34);
     show_time(t1);
-    set_time(t2);
+    set_time(t2, 13, 13, 13);
     show_time(t2);
     system("pause");
     return 0;
