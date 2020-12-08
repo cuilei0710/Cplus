@@ -1,8 +1,10 @@
 {
+    "editor.formatOnType": true,  // 输入分号(C/C++的语句结束标识)后自动格式化当前这一行的代码
     //C++ setting
     "C_Cpp.errorSquiggles": "Disabled",
     "C_Cpp.default.cppStandard": "c++20",
     "C_Cpp.default.cStandard": "c17",
+    "C_Cpp.clang_format_sortIncludes": true, // 格式化时调整include的顺序（按字母排序）
     "files.associations": {
         "array": "cpp",
         "atomic": "cpp",
@@ -63,28 +65,5 @@
         "**/EXE": true,
         "**/.gitignore": true,
     },
-
-    //Task setting
-    "task.quickOpen.history": 10,
-    "task.saveBeforeRun": "always",
-
-    //Translate setting
-    "commentTranslate.targetLanguage": "zh-CN",
-
-    //Workbench setting
-    "editor.fontSize": 18,
-    "editor.mouseWheelZoom": true,
-    "editor.minimap.maxColumn": 55 ,
-    "editor.tabCompletion": "on",
-    "editor.minimap.size": "fill",
-    "editor.suggest.showStatusBar": true,
-    "explorer.confirmDelete": false,
-    "explorer.confirmDragAndDrop": false,
-    "files.autoSave": "onFocusChange",
-    "files.autoGuessEncoding": true,
-    "files.trimTrailingWhitespace": true,
-    "workbench.iconTheme": "material-icon-theme",
-    "workbench.colorTheme": "Luke Dark",
-    "workbench.sideBar.location": "right",
-    "window.zoomLevel": 1,
+    "files.defaultLanguage": "Cpp",
 }
