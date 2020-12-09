@@ -65,5 +65,4 @@
         "**/EXE": true,
         "**/.gitignore": true,
     },
-    "files.defaultLanguage": "Cpp",
 }
