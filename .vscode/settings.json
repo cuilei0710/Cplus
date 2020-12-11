@@ -61,7 +61,7 @@
         "**/.hg": true,
         "**/CVS": true,
         "**/.DS_Store": true,
-        "**/.vscode": true,
+        "**/.vscode": false,
         "**/EXE": true,
         "**/.gitignore": true,
     },

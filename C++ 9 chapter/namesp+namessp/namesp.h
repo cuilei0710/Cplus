@@ -2,7 +2,7 @@
  * @Author: 崔小葵
  * @Date: 2020-12-11 12:32:22
  * @Last Modified by: 崔小葵
- * @Last Modified time: 2020-12-11 12:39:27
+ * @Last Modified time: 2020-12-11 13:23:55
  */
 // namesp.h
 #include <string>
@@ -20,7 +20,7 @@ namespace pers
 
 namespace debts
 {
-    using namespace std;
+    using namespace pers;
     struct Debt
     {
         Person name;
