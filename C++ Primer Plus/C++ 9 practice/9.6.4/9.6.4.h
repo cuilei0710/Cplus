@@ -13,7 +13,7 @@ namespace SALES
         double min;
     };
     // copies the lesser of 4 or n items from the array ar
-    // to the sales member of s ang computes and stores the
+    // to the sales member of s any computes and stores the
     // average, maximum values of the entered items;
     // remaining elements of sales, if any, set to 0
     void setSales(Sales &s, const double ar[], int n);
