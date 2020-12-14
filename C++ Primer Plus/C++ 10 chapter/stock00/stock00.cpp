@@ -46,17 +46,17 @@ void Stock::sell(long num, double price)
     {
         cout << "Number of shares sold can't be negative. "
              << "Transation is aborted.\n";
-        else if (num > shares)
-        {
-            cout << "You can't sell more than you have: "
-                 << "Transcation is aborted.\n";
-        }
-        else
-        {
-            shares -= num;
-            share_val = price;
-            set_tot();
-        }
+    }
+    else if (num > shares)
+    {
+        cout << "You can't sell more than you have! "
+             << "Transcation is aborted.\n";
+    }
+    else
+    {
+        shares -= num;
+        share_val = price;
+        set_tot();
     }
 }
 
@@ -71,5 +71,5 @@ void Stock::show()
     std::cout << "Company: " << company
               << " Shares: " << shares << '\n'
               << " Share Price: $" << share_val
-              << " Total Worth: $" << total_val;
+              << " Total Worth: $" << total_val << '\n';
 }

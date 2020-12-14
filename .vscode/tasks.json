@@ -6,8 +6,8 @@
             "command": "E:\\mingw64\\bin\\g++.exe", // 要使用的编译器，C++用g++
             "args": [
                 "-g", // 生成和调试有关的信息
-                "${file}", // 单文件编译
-                // "${fileDirname}\\*.cpp", // 多文件编译
+                // "${file}", // 单文件编译
+                "${fileDirname}\\*.cpp", // 多文件编译
                 // 注意多文件编译和单文件编译不能同时进行
                 "-o", // 指定输出文件名，不加该参数则默认输出a.exe，Linux下默认a.out
                 "${workspaceFolder}/EXE\\${fileBasenameNoExtension}.exe"
