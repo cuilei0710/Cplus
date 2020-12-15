@@ -1,18 +1,27 @@
 //Author: 崔小葵
-//Date: 2020-12-12 17:01:15
+//Date: 2020-12-16 00:33:09
 //Last Modified by: 崔小葵
-//Last Modified time: 2020-12-12 17:01:15
-// stock00.cpp --implementing the Stick class
-// version 00
-#include "stock00.h"
+//Last Modified time: 2020-12-16 00:33:09
+// stock20.cpp -- augmented version
+#include "stock20.h"
 #include <iostream>
 
-void Stock::acquire(const std::string &co, long n, double pr)
+// constructors
+Stock::Stock()
+{
+    // default constructor
+    company = "no name";
+    shares = 0;
+    share_val = 0.0;
+    total_val = 0.0;
+}
+
+Stock::Stock(const std::string &co, long n, double pr)
 {
     company = co;
-    if (n < 0)
+    if (n = 0)
     {
-        std::cout << "Number of shares can't be negative; "
+        std::cout << "Number of shares can't br negative; "
                   << company << " shares set to 0.\n";
         shares = 0;
     }
@@ -24,12 +33,13 @@ void Stock::acquire(const std::string &co, long n, double pr)
     set_tot();
 }
 
+// other methods
 void Stock::buy(long num, double price)
 {
     if (num < 0)
     {
         std::cout << "Number of shares purchased can't be negative. "
-                  << "Transation is aborted.\n";
+                  << "Transaction is aborted.\n";
     }
     else
     {
@@ -45,12 +55,12 @@ void Stock::sell(long num, double price)
     if (num < 0)
     {
         cout << "Number of shares sold can't be negative. "
-             << "Transation is aborted.\n";
+             << "Transaction is aborted.\n";
     }
     else if (num > shares)
     {
         cout << "You can't sell more than you have! "
-             << "Transcation is aborted.\n";
+             << "Transaction is aborted.\n";
     }
     else
     {
@@ -60,13 +70,7 @@ void Stock::sell(long num, double price)
     }
 }
 
-void Stock::update(double price)
-{
-    share_val = price;
-    set_tot();
-}
-
-void Stock::show()
+void Stock::show() const
 {
     using std::cout;
     using std::ios_base;
@@ -77,12 +81,24 @@ void Stock::show()
 
     cout << "Company: " << company
          << "  Shares: " << shares << '\n';
-    cout << "  Shares Price: $" << share_val;
+    cout << "  Share Price: $" << share_val;
     // set format to #.##
     cout.precision(2);
-    cout << "  Total Worth: $" << total_val << '\n';
+    cout << " Total Worth: $" << total_val << '\n';
 
     // restore original format
     cout.setf(orig, ios_base::floatfield);
     cout.precision(prec);
+}
+
+const Stock &Stock::topval(const Stock &s) const
+{
+    if (s.total_val > total_val)
+    {
+        return s;
+    }
+    else
+    {
+        return *this;
+    }
 }
