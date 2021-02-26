@@ -68,4 +68,7 @@
 
     // fileheader setting
     "fileheader.tpl": "//Author: {author} \r\n//Date: {createTime} \r\n//Last Modified by: {lastModifiedBy} \r\n//Last Modified time: {updateTime} \r\n",
+    "cSpell.words": [
+        "MYTIME"
+    ],
 }
