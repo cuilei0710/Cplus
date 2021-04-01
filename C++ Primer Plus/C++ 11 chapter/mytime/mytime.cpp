@@ -30,3 +30,4 @@ void Time::Reset(){
     minutes = m;
 }
 
+Time Time::Sum
