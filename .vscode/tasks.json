@@ -3,11 +3,11 @@
         {
             "type": "process", // process是把预定义变量和转义解析后直接全部传给command；shell相当于先打开shell再输入命令，所以args还会经过shell再解析一遍
             "label": "C/C++: g++.exe build active file", // 任务名称，与launch.json的preLaunchTask相对应
-            "command": "E:\\mingw64\\bin\\g++.exe", // 要使用的编译器，C++用g++
+            "command": "D:\\mingw64\\bin\\g++.exe", // 要使用的编译器，C++用g++
             "args": [
                 "-g", // 生成和调试有关的信息
-                // "${file}", // 单文件编译
-                "${fileDirname}\\*.cpp", // 多文件编译
+                "${file}", // 单文件编译
+                // "${fileDirname}\\*.cpp", // 多文件编译
                 // 注意多文件编译和单文件编译不能同时进行
                 "-o", // 指定输出文件名，不加该参数则默认输出a.exe，Linux下默认a.out
                 "${workspaceFolder}/EXE\\${fileBasenameNoExtension}.exe"
