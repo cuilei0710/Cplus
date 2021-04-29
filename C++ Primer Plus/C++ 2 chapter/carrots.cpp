@@ -6,7 +6,7 @@ int main()
     cin >> carrots;
     cout << "I have " << carrots << "carrots." << endl;
     carrots = carrots - 1;
-    cout << "Crunch, crunch. Now I have " << carrots << "carrots." << endl;
+    cout << "Crunch, crunch. Now I have " << carrots << " carrots." << endl;
     system("pause");
     return 0;
 }
